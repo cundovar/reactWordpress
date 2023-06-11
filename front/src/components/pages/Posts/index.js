@@ -21,17 +21,21 @@ console.log('posts',posts)
 
     return(
         <>
+           <div className=" w-4/5 m-auto flex justify-between align-middle flex-wrap gap-10">
        {
         posts && posts.map((post)=>{
            return (
-            <div key={post.id}>
-                <h2 className="text-3xl font-bold underline">{post.title.rendered} </h2>
+
+            <div key={post.id} className=" card p-3 w-96 shadow-lg" >
+                <h2 className="text-lg font-bold">{post.title.rendered} </h2>
                 {/*dangerouslySetInnerHTML pour retirer les balise p intempestive  */}
                 <p dangerouslySetInnerHTML={{__html : post.excerpt.rendered}}></p>
             </div>
-           )
+
+)
 })
-       }
+}
+</div>
         </>
     )
 }

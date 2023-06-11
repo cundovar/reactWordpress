@@ -1,16 +1,22 @@
-import logo from './logo.svg';
-import Posts from './components/pages/Posts'
+import React from 'react';
+import Pages from './components/pages/Pages';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-         <Posts/>
+           <>
+   
+   
+            
+         <Pages/>
+           
+          
+           
+           
+           </>
  
-      </header>
-    </div>
+                                    
   );
 }
 
