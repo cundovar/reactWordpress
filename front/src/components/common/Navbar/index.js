@@ -9,6 +9,7 @@ const Navbar=()=>{
           <ul className="flex gap-5 justify-end">
             <li><Link to='/'>accueil</Link> </li>
             <li><Link to='/posts'>posts</Link> </li>
+       
           
           </ul>
          </div>
